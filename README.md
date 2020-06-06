@@ -1,6 +1,6 @@
 # gender_statistics
 
-A new Flutter project.
+The propose of this project is to show some data about gender statistics, playning with quandl datasets and some interesting flutter libraries. Just for fun.
 
 ## Getting Started
 
