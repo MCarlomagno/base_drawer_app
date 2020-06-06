@@ -1,3 +1,4 @@
+import 'package:gender_statistics/api/quandl_service.dart';
 import 'package:injectable/injectable.dart';
 import 'package:stacked_services/stacked_services.dart';
 
@@ -7,4 +8,6 @@ abstract class ThirdPartyServicesModule {
   NavigationService get navigationService;
   @lazySingleton
   DialogService get dialogService;
+  @lazySingleton
+  QuandlService get quandlService;
 }

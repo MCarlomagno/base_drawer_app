@@ -5,6 +5,8 @@ import 'package:stacked_services/stacked_services.dart';
 
 
 class StartupViewModel extends BaseViewModel {
+  // TODO startup logic!
+  // https://www.youtube.com/watch?v=d6FaV7cp_YE
 
   final NavigationService _navigationService = locator<NavigationService>();
 

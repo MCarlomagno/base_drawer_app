@@ -24,6 +24,10 @@ class HomeView extends StatelessWidget {
           body: Center(
             child: Text(model.title),
           ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: model.runSampleRequest,
+            child: Icon(Icons.accessible_forward),
+          ),
         );
       },
       viewModelBuilder: () => HomeViewModel(),

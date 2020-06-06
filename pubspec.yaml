@@ -31,6 +31,8 @@ dependencies:
   #navigation
   auto_route:
   stacked_services: 0.3.2+1
+  #http
+  http: ^0.12.1
 
   #inversion of control
   get_it:
