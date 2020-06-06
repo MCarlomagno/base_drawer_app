@@ -11,8 +11,12 @@ class HomeViewModel extends BaseViewModel {
   String _title = "Home sweet home";
   String get title => this._title;
 
+  String _data = "";
+  String get data => this._data;
 
   Future<void> runSampleRequest() async {
-    await _quandlService.sampleHttpRequest();
+    setBusy(true);
+    this._data = await _quandlService.sampleHttpRequest();
+    setBusy(false);
   }
 }

@@ -1,14 +1,16 @@
+import 'package:gender_statistics/env/enviroment.dart';
 import 'package:http/http.dart' as http;
 
 class QuandlService {
-  String sampleUrl =
-      'https://www.quandl.com/api/v3/datasets/WGEN/GUY_SL_EMP_UNDR_FE_ZS?start_date=2017-12-31&end_date=2017-12-31&api_key=bfyTDxRheky4onfAYSH_';
-  var client = http.Client();
+  //TODO: Standarize the url building give more scalability (use the api url enum)
+  String url = Enviroment.apiUrl + 'ARG_SP_DYN_IMRT_FE_IN.json?api_key=' + Enviroment.apiKey; 
 
-  sampleHttpRequest() async {
+
+ Future<String> sampleHttpRequest() async {
+    var client = http.Client();
     try {
-      var uriResponse = await client.get(this.sampleUrl);
-      print('sample request response code: ' + uriResponse.statusCode.toString());
+      var uriResponse = await client.get(this.url);
+      return uriResponse.body;
     } finally {
       client.close();
     }

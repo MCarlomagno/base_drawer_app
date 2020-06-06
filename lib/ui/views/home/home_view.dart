@@ -21,12 +21,16 @@ class HomeView extends StatelessWidget {
             ),
           ),
           drawer: _HomeDrawer(),
-          body: Center(
-            child: Text(model.title),
-          ),
+          body: model.isBusy
+              ? Center(
+                  child: CircularProgressIndicator(),
+                )
+              : Center(
+                  child: Text(model.data),
+                ),
           floatingActionButton: FloatingActionButton(
             onPressed: model.runSampleRequest,
-            child: Icon(Icons.accessible_forward),
+            child: Icon(Icons.refresh),
           ),
         );
       },
