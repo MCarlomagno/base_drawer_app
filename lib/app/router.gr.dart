@@ -7,8 +7,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:gender_statistics/ui/views/startup/startup_view.dart';
-import 'package:gender_statistics/ui/views/home/home_view.dart';
+import 'package:base_drawer_app/ui/views/startup/startup_view.dart';
+import 'package:base_drawer_app/ui/views/home/home_view.dart';
 
 abstract class Routes {
   static const startupViewRoute = '/startup-view-route';

@@ -4,9 +4,9 @@
 // InjectableConfigGenerator
 // **************************************************************************
 
-import 'package:gender_statistics/services/third_party_services_module.dart';
+import 'package:base_drawer_app/services/third_party_services_module.dart';
 import 'package:stacked_services/stacked_services.dart';
-import 'package:gender_statistics/api/quandl_service.dart';
+import 'package:base_drawer_app/api/sample_service.dart';
 import 'package:get_it/get_it.dart';
 
 void $initGetIt(GetIt g, {String environment}) {
@@ -15,7 +15,7 @@ void $initGetIt(GetIt g, {String environment}) {
       () => thirdPartyServicesModule.dialogService);
   g.registerLazySingleton<NavigationService>(
       () => thirdPartyServicesModule.navigationService);
-  g.registerLazySingleton<QuandlService>(
+  g.registerLazySingleton<SampleService>(
       () => thirdPartyServicesModule.quandlService);
 }
 
@@ -25,5 +25,5 @@ class _$ThirdPartyServicesModule extends ThirdPartyServicesModule {
   @override
   NavigationService get navigationService => NavigationService();
   @override
-  QuandlService get quandlService => QuandlService();
+  SampleService get quandlService => SampleService();
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gender_statistics/app/locator.dart';
-import 'package:gender_statistics/app/router.gr.dart';
+import 'package:base_drawer_app/app/locator.dart';
+import 'package:base_drawer_app/app/router.gr.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 void main() {

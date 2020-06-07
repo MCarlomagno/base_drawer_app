@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gender_statistics/ui/views/home/home_view.dart';
+import 'package:base_drawer_app/ui/views/home/home_view.dart';
 import 'package:stacked/stacked.dart';
 
 import 'startup_view_model.dart';

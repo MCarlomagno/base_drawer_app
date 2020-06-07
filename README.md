@@ -1,6 +1,6 @@
-# gender_statistics
+# base_drawer_app
 
-The propose of this project is to show some data about gender statistics, playning with quandl datasets and some interesting flutter libraries. Just for fun.
+The propose of this project is to create a sample drawer with floating action button useful for generic apps
 
 ## Getting Started
 

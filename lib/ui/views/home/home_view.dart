@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gender_statistics/ui/views/chart_sample/chart_sample_view.dart';
+import 'package:base_drawer_app/ui/views/chart_sample/chart_sample_view.dart';
 import 'package:stacked/stacked.dart';
 
 import 'home_view_model.dart';

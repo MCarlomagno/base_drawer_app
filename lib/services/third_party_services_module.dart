@@ -1,4 +1,4 @@
-import 'package:gender_statistics/api/quandl_service.dart';
+import 'package:base_drawer_app/api/sample_service.dart';
 import 'package:injectable/injectable.dart';
 import 'package:stacked_services/stacked_services.dart';
 
@@ -9,5 +9,5 @@ abstract class ThirdPartyServicesModule {
   @lazySingleton
   DialogService get dialogService;
   @lazySingleton
-  QuandlService get quandlService;
+  SampleService get quandlService;
 }
