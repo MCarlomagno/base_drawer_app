@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gender_statistics/ui/views/chart_sample/chart_sample_view.dart';
 import 'package:stacked/stacked.dart';
 
 import 'home_view_model.dart';
@@ -12,6 +13,7 @@ class HomeView extends StatelessWidget {
       builder: (context, model, child) {
         var _scaffoldKey = GlobalKey<ScaffoldState>();
         return Scaffold(
+          backgroundColor: Colors.white,
           key: _scaffoldKey,
           appBar: new AppBar(
             title: new Text("App"),
